@@ -1,0 +1,343 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Full display */
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+/* The Sidebar */
+.sidebar{
+    background-color: rgb(0, 0, 0);
+    border: 1px;
+    width: 328px;
+
+}
+/* Nav bar */
+.nav{
+    background-color: rgb(17, 17, 17);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option i{
+    font-size: 1rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* Search */
+#nav-search{
+    opacity: 0.75;
+    transition: 0.5s;
+}
+#nav-search:hover{
+    opacity: 1;
+}
+
+/* Library */
+.options{
+    display: flex;
+}
+.library{
+    background-color: rgb(17, 17, 17);
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+    height: 40rem;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.lib-option{
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.lib-option img{
+    width: 1rem;
+}
+.lib-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.icons i{
+    font-size: 1rem;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.lib-option:hover,
+.icons i:hover{
+    opacity: 1;
+}
+/* Lib Box */
+.box{
+    background-color: #343434;
+    border-radius: 0.75rem;
+    height: auto;
+    padding: 1rem 0.75rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+.box-p1{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    height: 2.25rem;
+    transition: 0.5s;
+}
+
+/* Main content */
+.main-content{
+    background-color: rgb(23, 23, 23);
+    flex:1;
+    overflow: auto;
+    padding: 0 1.5rem 6rem 1rem;
+}
+.sticky-nav{
+    position: sticky;
+    top:0;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 100;
+}
+#user{
+    margin-left: 10px;
+}
+/* Back and forward buttons */
+.backforth{
+    display: inline-flex;
+    background-color: #343434;
+    border-radius: 100px;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.backforth img{
+    width: 15px;
+    height: 15px;
+}
+.backforth:hover{
+    opacity: 1;
+}
+/* Install button */
+.install{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    height: 2.25rem;
+    transition: 0.5s;
+}
+/* media for nav */
+@media (max-width: 1000px){
+    .premium{
+        display: none;
+    }
+    .back{
+        display: none;
+    }
+}
+/* Card */
+.cards-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #232323;
+    width: 150px;
+    height: 240px;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.cards-container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px #141414
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    margin-top: -8px;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    z-index: 10;
+}
+/* Footer */
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    border-top: 1px solid white;
+    opacity: 0.4;
+    width: 90%;
+    height: 10%;
+
+}
+
+/* playbar */
+.music-player{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    z-index: 1000;
+}
+/* Album */
+.album{
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+}
+.pic img{
+    margin-left: 1rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+}
+.text{
+    margin-left: 1rem;
+}
+.album-head{
+    font-weight: 600;
+    font: 0.75rem;
+}
+.album-body{
+    margin-top: -8px;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    z-index: 10;
+}
+.album-icons{
+    display: inline-flex;
+    margin-left: 1rem;
+}
+.album-icons p{
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+/* Player */
+.player{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.player img{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    opacity: 0.7;
+}
+.player img:hover{
+    opacity: 1;
+}
+.playback-bar{
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db760;
+    border-radius: 100px;
+    margin-top: -6px
+}
+
+/* Controls */
+.controls{
+    width:25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.control-icons{
+    display: flex;
+}
+.control-icons p{
+    margin-right: 0.75rem;
+    opacity: 0.6;
+}
+.bar-volume::-webkit-slider-thumb{
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #fdfffe;
+    margin-top: -3px;
+}
