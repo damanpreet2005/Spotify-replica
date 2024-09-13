@@ -30,4 +30,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Connect with Me 💬
 - [LinkedIn](https://www.linkedin.com/in/damanpreet-singh-069b99268)
-- [GitHub](https://github.com/your-username)
+- [GitHub]([https://github.com/your-username](https://github.com/damanpreet2005))
