@@ -18,7 +18,7 @@ This is a fully responsive replica of the Spotify web player interface built usi
 - **Google Fonts** for typography
 
 ## Demo 🔗
-Check out the live demo of the project [here](#).
+Check out the live demo of the project [here](https://github.com/damanpreet2005/Spotify-replica/blob/main/Spotify.html).
 
 ## License 📜
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
